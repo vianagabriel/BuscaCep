@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+:root{
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #06416a;
+    color: rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    width: 100%;
+    background-color: #000c19e7;
+    padding-block: 2rem;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1{
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+
+header span{
+    color: #0396ff;
+    font-weight: 400;
+}
+
+.titleAndSearch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.titleAndSearch h2{
+    color: rgb(255, 183, 0);
+    font-size: 3rem;
+}
+
+.search{
+    width: 55rem;
+    background-color: #ffffff;
+    padding-left: 1rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.titleAndSearch input{
+    width: 48rem;
+    padding: 2rem;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.titleAndSearch input::placeholder{
+    font-size: 1.7rem;
+    color: rgb(75, 75, 75);
+}
+
+.search button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+main{
+    width: 85rem;
+    margin: 0 auto;
+    margin-top: 7rem; 
+    background-color: #000c19e7;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+main .table-header{
+    display: flex;
+    justify-content: space-between; 
+}
+
+.infos h4{
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-weight: 400;
+    padding-top: 1rem;
+    padding-inline: 5rem;
+}
+
+.infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.infos p{
+  margin-top: 3.5rem;
+  margin-left: 2rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.infos-margin-left{
+    margin-left: -5rem;
+}
+
+
+
