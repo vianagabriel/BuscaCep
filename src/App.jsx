@@ -54,36 +54,35 @@ export function App() {
          </div>
        </div>
 
-      {Object.keys(responseSearch).length > 0 && (
+       {Object.keys(responseSearch).length > 0 && (
 
        <main>
-         <div className="table-header">
-          <div className="infos">
-           <h4>Nome</h4>
-           <p>{responseSearch.logradouro}</p>
-          </div>
-           
-
-          <div className="infos">
-           <h4>Bairro</h4>
-           <p>{responseSearch.bairro}</p>
-          </div>
-
-          <div className="infos">
-           <h4 className="infos-margin-left">Localidade</h4>
-           <p>{responseSearch.localidade}</p>
-          </div>
-
-          <div className="infos">
-           <h4>CEP</h4>
-           <p>{responseSearch.cep}</p>
-          </div>
-
-         </div>
-
+         
+       <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Bairro</th>
+          <th>Localidade</th>
+          <th>Cep</th>
+          
+        </tr>
+      </thead>
+      
+      <tbody>
+          <tr>
+            <td>{responseSearch.logradouro}</td>
+            <td>{responseSearch.bairro}</td>
+            <td>{responseSearch.localidade}</td>
+            <td>{responseSearch.cep}</td>
+          </tr>
+        
+      </tbody>
+    </table>
         
        </main>
-      )}
+       )}
+      
         
     </div>
   )
